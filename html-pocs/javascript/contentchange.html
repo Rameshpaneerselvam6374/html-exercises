@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Change</title>
+    <style>
+        div {
+            background-color: blueviolet;
+            text-align: center;
+            margin: auto;
+            width: 300px;
+            height: auto;
+            padding: auto;
+            color: aqua;
+        }
+        div button{
+            background-color: brown;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div><h2>Html Tag use to Contentt change</h2>
+    <p id="exp">Hello</p>
+    <input type="button" value="change" onclick="fun()"></div>
+    <script>
+        function fun(){
+            document.getElementById('exp').innerHTML="Hi";
+        }
+    </script>
+</body>
+</html>

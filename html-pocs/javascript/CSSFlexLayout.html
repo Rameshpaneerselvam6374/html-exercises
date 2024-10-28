@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Flex Layout Structure</title>
+</head>
+<style>
+    h2 {
+        text-align: center;
+    }
+    /* box-size how to use ?????*/
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:whitesmoke;
+    }
+    header {
+      background-color: #666;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    section{
+        /* how to use webkit */
+        display: -webkit-flex;    
+       display: flex;
+    }
+    nav {
+        flex: 0.5;
+        padding: 20px;
+     background-color: #1f9;
+     color: blue;
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    article {
+        flex: 3;
+        padding: 20px;
+        background-color: #f1f1f1;
+    }
+    footer{
+        background-color: #666;
+        text-align: center;
+        padding: 30px;
+        color: white;
+    }
+    
+    /* Container for flexboxes
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+/* Style the navigation menu */
+/*nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+/* Style the content */
+/*article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+/*@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+} */
+</style>
+<body>
+    <h2>Html Layout</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+     <header>
+        <h2>Chennai</h2>
+     </header>
+     <section>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Tool</a></li>
+            </ul>
+        </nav>
+            <article>
+                <h2>News</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                </article>
+     </section>
+     <footer><h2>footer</h2></footer>
+</body>
+</html>

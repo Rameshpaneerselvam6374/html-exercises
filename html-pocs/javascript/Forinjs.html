@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For/in Loop Use Javascript</title>
+</head>
+<body>
+    <h2>for/in Loop function use Javascript</h2>
+    <p id="demo"></p>
+    <script>
+        const person={name:"ramesh",age:"24"};
+        let value="";
+        for (let i in person){
+            value+=person[i];
+        }
+        document.getElementById('demo').innerHTML=value;
+    </script>
+    
+</body>
+</html>

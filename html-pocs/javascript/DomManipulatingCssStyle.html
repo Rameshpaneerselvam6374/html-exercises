@@ -1,0 +1,27 @@
+<style>
+div{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    transition: 2s;
+}
+
+.widmax{
+width: 1000px;
+}
+</style>
+<div id="box">
+   
+   
+    <button onclick="changecolor()">Change color</button>
+</div>
+
+<script>
+//select box
+let box = document.getElementById("box");
+
+function changecolor(){
+    box.style.backgroundColor="red";
+    box.setAttribute("class","widmax");
+}
+</script>

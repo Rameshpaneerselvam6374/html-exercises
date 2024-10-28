@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function use to Javascript</title>
+</head>
+<body>
+    <h2>Function use to Javascript</h2>
+    <p id="demo"></p>
+    <h2>Function Expressionn</h2>
+    <p id="demo1"></p>
+    <h2>Function Hoisting</h2>
+    <p id="demo2"></p>
+    <h2>Self Invoke Function</h2>
+    <p id="demo3"></p>
+    <h2>Arrow Function</h2>
+    <p id="demo4"></p>
+    <script>
+        function myfunction(a,b){
+            return a*b;
+        }
+        let x=myfunction(2,3);
+        document.getElementById('demo').innerHTML=x;
+        let y=function(a,b){return(a*b)};
+        document.getElementById('demo1').innerHTML=y(5,2);
+        myfunction(5);
+       function myfunction(a){
+        
+        return a*a;
+       }
+       document.getElementById('demo2').innerHTML=myfunction(5);
+       (function(){document.getElementById('demo3').innerHTML="Self Invoke Function"})();
+
+       const p = (x,y) => (x*y);
+       document.getElementById('demo4').innerHTML=p(5,5);
+    </script>
+    
+</body>
+</html>

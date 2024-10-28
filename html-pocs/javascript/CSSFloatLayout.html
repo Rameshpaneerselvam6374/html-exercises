@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Float Layout Structure</title>
+</head>
+<style>
+    h2 {
+        text-align: center;
+    }
+    /* bod-size how to use ?????*/
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:whitesmoke;
+    }
+    header {
+      background-color: #666;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    nav {
+     background-color: #1f9;
+     float: left;
+     width: 15%;
+     height: 800px;
+     color: blue;
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    article {
+        float: left;
+        width: 85%;
+        padding: 20px;
+        height: 800px;
+        background-color: #f1f1f1;
+    }
+    footer{
+        background-color: #666;
+        text-align: center;
+        padding: 30px;
+        color: white;
+    }
+    /* how to use section::after???? */
+    section::after {
+         content: "";
+         display: table;
+         clear: both;
+    }
+    /* how to use ???? */
+     @media(max-width:600px){
+      nav ,article{
+      width: 100%;
+     height: auto;
+   }
+   }
+
+</style>
+<body>
+    <h2>Html Layout</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+     <header>
+        <h2>Chennai</h2>
+     </header>
+     <section>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Tool</a></li>
+            </ul>
+        </nav>
+            <article>
+                <h2>News</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perspiciatis. Repellendus quibusdam dolorem iure minima quisquam, quos nisi molestiae eaque quis possimus laudantium similique excepturi illo ullam neque, laboriosam tempora!</p>
+                </article>
+     </section>
+     <footer><h2>footer</h2></footer>
+</body>
+</html>

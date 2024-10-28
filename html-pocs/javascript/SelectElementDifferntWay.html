@@ -1,0 +1,24 @@
+ <h1 class="ok">One</h1>
+<h1 class="ok">Two</h1>
+<h1 class="ok">Three</h1>
+
+<script>
+    let div = document.querySelectorAll(".ok")
+    for (count = 0; count<div.length; count+=1){
+    console.log(div[count].textContent)
+}
+</script>
+<!-- 
+<div class="one">
+    Hello
+
+</div>
+
+<script>
+    //div select
+    let div = document.getElementById("one")
+    console.log(div.innerHTML)
+    div.innerHTML="<h1>Hello</h1>"
+
+    
+</script>  -->

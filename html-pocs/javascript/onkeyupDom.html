@@ -1,0 +1,12 @@
+<input id="flow" onkeyup="change()">
+<!-- <button onclick="change()">click</button> -->
+<p id="result"></p>
+
+<script>
+    let flow  = document.getElementById("flow");
+    let result = document.getElementById("result");
+
+    function change(){
+    result.textContent=flow.value
+}
+    </script>

@@ -1,0 +1,25 @@
+<h1 id="result">Name</h1>
+<button onclick="update(event)">Ramesh</button>
+<button onclick="update(event)">Dhinesh</button>
+<button onclick="update(event)">Poo</button>
+
+<h1  onclick="deleteitem(event)">One</h1>
+<h1  onclick="deleteitem(event)">Two</h1>
+<h1  onclick="deleteitem(event)">Three</h1>
+<h1  onclick="deleteitem(event)">Four</h1>
+<h1  onclick="deleteitem(event)">Five</h1>
+<h1  onclick="deleteitem(event)">Six</h1>
+<script>
+    //select h1
+    let h1 = document.getElementById('result')
+
+    function update(event){
+        console.log(event.target.textContent)
+        h1.textContent = event.target.textContent
+    }
+
+    
+    function deleteitem(event){
+        event.target.remove()
+    }
+</script>

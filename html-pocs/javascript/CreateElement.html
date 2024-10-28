@@ -1,0 +1,31 @@
+<div id="box">
+    <p>Hello</p>
+    <p id="remove">Remove</p>
+</div>
+
+<div>
+    <h1>Ramesh</h1>
+</div>
+
+<script>
+    let h1Element = document.createElement('h1')
+    h1Element.innerHTML="bye"
+    console.log(h1Element)
+
+    let addelement = document.getElementById('box')
+    addelement.append(h1Element)  // add element a the last child 
+    // divbox.prepend(h1Element) add element as the first child
+
+    let prepended = document.querySelector("div")
+    prepended.prepend("Prepend First")
+    prepended.append("Append is Last")
+
+    
+    // let div = document.querySelector("div")
+    // div.insertAdjacentElement("beforebegin",)
+    //divbox.inserAdjacentElement("afterbegin",h1Element)
+
+    let remove = document.getElementById("remove")
+    remove.remove()
+
+</script>
